@@ -9,12 +9,12 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
   
-RUN gitclone https://github.com/DeeCeeXxx/Queen_Anita-V3
+RUN gitclone https://github.com/iltrashdipalermo96/Queen_Anita-V3
   
 
 COPY package.json .
 
-RUN npm install && npm install qrcode-terminal
+RUN npm install
 
 COPY . .
 
